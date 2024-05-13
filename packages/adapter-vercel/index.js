@@ -157,10 +157,10 @@ async function v1(builder, external) {
 
 	builder.mkdirp(`${dir}/config`);
 
-	const prerendered_pages = Array.from(builder.prerendered.pages, ([src, page]) => ({
-		src,
-		dest: page.file
-	}));
+	// const prerendered_pages = Array.from(builder.prerendered.pages, ([src, page]) => ({
+	// 	src,
+	// 	dest: page.file
+	// }));
 
 	const prerendered_redirects = Array.from(builder.prerendered.redirects, ([src, redirect]) => ({
 		src,
